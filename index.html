@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kamilla Evelyn – Analista de Supply Chain</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  :root {
+    --navy: #1B2F4E; --gold: #C49A3C;
+    --white: #FFFFFF; --off: #F8F7F4;
+    --dark: #1A1A1A; --gray: #4A4A4A; --lgray: #888888;
+    --sw: 33%;
+  }
+  body { font-family: 'Lato', sans-serif; background: var(--off); font-size: 13px; line-height: 1.55; }
+  .page { width: 210mm; min-height: 297mm; margin: 0 auto; display: flex; background: var(--white); box-shadow: 0 4px 30px rgba(0,0,0,0.15); }
+
+  /* SIDEBAR */
+  .sidebar { width: var(--sw); background: var(--navy); padding: 32px 20px; display: flex; flex-direction: column; }
+  .s-name { font-family: 'Playfair Display', serif; font-size: 18px; font-weight: 700; color: var(--white); line-height: 1.25; margin-bottom: 4px; }
+  .s-role { font-size: 8.5px; font-weight: 700; color: var(--gold); letter-spacing: 1.6px; text-transform: uppercase; margin-bottom: 18px; padding-bottom: 16px; border-bottom: 1px solid rgba(255,255,255,0.12); line-height: 1.5; }
+  .s-sec { margin-bottom: 18px; }
+  .s-title { font-size: 8px; font-weight: 700; letter-spacing: 2.2px; text-transform: uppercase; color: var(--gold); margin-bottom: 8px; padding-bottom: 4px; border-bottom: 1px solid rgba(196,154,60,0.28); }
+  .contact-item { font-size: 10px; color: rgba(255,255,255,0.78); margin-bottom: 5px; display: flex; gap: 5px; align-items: flex-start; }
+  .lbl { color: rgba(255,255,255,0.35); font-size: 8.5px; font-weight: 700; letter-spacing: 0.4px; text-transform: uppercase; min-width: 20px; padding-top: 1px; }
+  .tags { display: flex; flex-wrap: wrap; gap: 4px; }
+  .tag { background: rgba(255,255,255,0.07); color: rgba(255,255,255,0.8); border: 1px solid rgba(255,255,255,0.1); border-radius: 3px; padding: 2px 6px; font-size: 9.5px; font-weight: 300; }
+  .tag.hl { background: rgba(196,154,60,0.16); border-color: rgba(196,154,60,0.35); color: #e8c97a; font-weight: 400; }
+  .lang-row { display: flex; justify-content: space-between; margin-bottom: 6px; }
+  .lang-n { font-size: 10.5px; color: rgba(255,255,255,0.8); }
+  .lang-l { font-size: 8.5px; color: var(--gold); font-weight: 700; text-transform: uppercase; letter-spacing: 0.3px; }
+  .edu-i { margin-bottom: 9px; }
+  .edu-d { font-size: 10px; color: rgba(255,255,255,0.88); font-weight: 700; line-height: 1.3; }
+  .edu-s { font-size: 9px; color: rgba(255,255,255,0.42); margin-top: 2px; }
+  .edu-t { font-size: 8.5px; color: rgba(255,255,255,0.35); margin-top: 3px; font-style: italic; line-height: 1.4; }
+  .cert-i { margin-bottom: 6px; }
+  .cert-n { font-size: 9.5px; color: rgba(255,255,255,0.8); line-height: 1.35; }
+  .cert-m { font-size: 8.5px; color: rgba(255,255,255,0.35); margin-top: 1px; }
+
+  /* MAIN */
+  .main { width: calc(100% - var(--sw)); padding: 32px 26px; }
+  .section { margin-bottom: 18px; }
+  .sec-title { font-size: 8px; font-weight: 700; letter-spacing: 2.2px; text-transform: uppercase; color: var(--navy); margin-bottom: 8px; padding-bottom: 4px; border-bottom: 2px solid var(--gold); display: inline-block; }
+  .profile-text { font-size: 11px; color: var(--gray); line-height: 1.65; text-align: justify; }
+  .job { margin-bottom: 14px; }
+  .job-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 2px; flex-wrap: wrap; gap: 2px; }
+  .job-title { font-family: 'Playfair Display', serif; font-size: 12.5px; font-weight: 600; color: var(--navy); }
+  .job-period { font-size: 9px; color: var(--lgray); font-style: italic; white-space: nowrap; padding-top: 2px; }
+  .job-co { font-size: 10px; color: var(--gold); font-weight: 700; letter-spacing: 0.3px; text-transform: uppercase; margin-bottom: 5px; }
+  ul.bl { list-style: none; padding: 0; }
+  ul.bl li { font-size: 10.5px; color: var(--gray); line-height: 1.5; padding-left: 12px; position: relative; margin-bottom: 3px; text-align: justify; }
+  ul.bl li::before { content: ""; position: absolute; left: 0; top: 6px; width: 5px; height: 1.5px; background: var(--gold); }
+  ul.bl li.bold { color: var(--dark); font-weight: 700; }
+  .badge { display: inline-block; background: var(--navy); color: var(--white); font-size: 9px; font-weight: 700; padding: 1px 5px; border-radius: 2px; letter-spacing: 0.2px; margin-right: 2px; }
+  @media print { body { background: white; } .page { box-shadow: none; margin: 0; width: 100%; } }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- SIDEBAR -->
+  <div class="sidebar">
+    <div class="s-name">Kamilla Evelyn<br>de Jesus de Paula</div>
+    <div class="s-role">Analista de Supply Chain<br>Especialista em Compras</div>
+
+    <div class="s-sec">
+      <div class="s-title">Contato</div>
+      <div class="contact-item"><span class="lbl">Email</span><span>kmillaevelyn@gmail.com</span></div>
+      <div class="contact-item"><span class="lbl">Tel</span><span>(35) 99167-4763</span></div>
+      <div class="contact-item"><span class="lbl">In</span><span>linkedin.com/in/kmillaevelyn</span></div>
+      <div class="contact-item" style="margin-top:7px;padding-top:7px;border-top:1px solid rgba(255,255,255,0.1);">
+        <span class="lbl">CNH</span><span>Categoria B</span>
+      </div>
+      <div class="contact-item">
+        <span class="lbl" style="min-width:30px;">Mob.</span><span>Disponivel para viagens e remoto</span>
+      </div>
+    </div>
+
+    <div class="s-sec">
+      <div class="s-title">Sistemas e ERP</div>
+      <div class="tags">
+        <span class="tag hl">Protheus (TOTVS)</span>
+        <span class="tag hl">Tasy</span>
+        <span class="tag hl">Bionexo</span>
+        <span class="tag">CRM</span>
+        <span class="tag">Excel Avancado</span>
+        <span class="tag">Power BI</span>
+      </div>
+    </div>
+
+    <div class="s-sec">
+      <div class="s-title">Programacao e Dados</div>
+      <div class="tags">
+        <span class="tag hl">Python</span>
+        <span class="tag hl">HTML</span>
+        <span class="tag">SQL</span>
+        <span class="tag">Banco de Dados</span>
+        <span class="tag">Ciencia de Dados</span>
+        <span class="tag">IA Aplicada</span>
+        <span class="tag">AWS Cloud</span>
+      </div>
+    </div>
+
+    <div class="s-sec">
+      <div class="s-title">Supply Chain e Compras</div>
+      <div class="tags">
+        <span class="tag">Compras Estrategicas</span>
+        <span class="tag">Negociacao</span>
+        <span class="tag">Gestao de Fornecedores</span>
+        <span class="tag">Saving e Custo</span>
+        <span class="tag">PCM e PCP</span>
+        <span class="tag">Kanban</span>
+        <span class="tag">Analise de Causa Raiz</span>
+        <span class="tag">Supply Chain Integrado</span>
+        <span class="tag">Gestao de Projetos PMI</span>
+        <span class="tag">Industria 4.0</span>
+        <span class="tag">Melhoria Continua</span>
+      </div>
+    </div>
+
+    <div class="s-sec">
+      <div class="s-title">Idiomas</div>
+      <div class="lang-row"><span class="lang-n">Portugues</span><span class="lang-l">Nativo</span></div>
+      <div class="lang-row"><span class="lang-n">Ingles</span><span class="lang-l">Intermediario</span></div>
+      <div class="lang-row"><span class="lang-n">Espanhol</span><span class="lang-l">Basico</span></div>
+    </div>
+
+    <div class="s-sec">
+      <div class="s-title">Formacao</div>
+      <div class="edu-i">
+        <div class="edu-d">BCTec – Ciencia e Tecnologia</div>
+        <div class="edu-s">UNIFEI · Conclusao 2026</div>
+        <div class="edu-t">IA, Ciencia de Dados, Cloud, Estatistica, Banco de Dados, Gestao e Tomada de Decisao</div>
+      </div>
+      <div class="edu-i">
+        <div class="edu-d">Tecnico em Informatica – Nota 10</div>
+        <div class="edu-s">Col. Adelia Camargo de Correa · 2015</div>
+        <div class="edu-t">Java, HTML, CSS, C#, C++, MySQL, Redes, Banco de Dados</div>
+      </div>
+    </div>
+
+    <div class="s-sec">
+      <div class="s-title">Certificacoes</div>
+      <div class="cert-i"><div class="cert-n">Supply Chain: Supplier Development and Diversity</div><div class="cert-m">LinkedIn Learning · 2025</div></div>
+      <div class="cert-i"><div class="cert-n">Career Essentials in Project Management</div><div class="cert-m">Microsoft e LinkedIn / PMI · 2025 · 15h</div></div>
+      <div class="cert-i"><div class="cert-n">Strategic Negotiation</div><div class="cert-m">LinkedIn Learning · 2025</div></div>
+      <div class="cert-i"><div class="cert-n">Gestao de Logistica e Supply Chain</div><div class="cert-m">Udemy · 2024 · 15h</div></div>
+      <div class="cert-i"><div class="cert-n">Trilha de Lideranca (5 modulos)</div><div class="cert-m">Pratica Produtos S.A. · 2025-2026</div></div>
+      <div class="cert-i"><div class="cert-n">SGQ-CPQ: Circulo de Qualidade</div><div class="cert-m">Pratica Produtos S.A. · 2026</div></div>
+      <div class="cert-i"><div class="cert-n">Industria 4.0</div><div class="cert-m">PUCRS – Escola Politecnica · 2024 · 10h</div></div>
+      <div class="cert-i"><div class="cert-n">Gestao de Compras e Negociacao Estrategica</div><div class="cert-m">Udemy · 2023 · 9h</div></div>
+      <div class="cert-i"><div class="cert-n">Masterclass Ingles no Trabalho</div><div class="cert-m">Grupo Ninja · 2025</div></div>
+    </div>
+  </div>
+
+  <!-- MAIN -->
+  <div class="main">
+
+    <div class="section">
+      <div class="sec-title">Perfil Profissional</div>
+      <p class="profile-text">
+        Analista de Supply Chain com mais de 6 anos de atuacao em compras estrategicas, planejamento de materiais e gestao de fornecedores em ambientes industriais, hospitalares e de servicos. Combina solido track record operacional — reducoes de custos comprovadas entre 10% e 55% — com capacidade analitica de identificar causas raiz, modelar processos e propor solucoes integradas entre Compras, PCM, PCP, Engenharia e Logistica. Experiente em gestao multi-unidade e operacao de ERP Protheus (TOTVS), Tasy e Bionexo. Base tecnica em Python, HTML, Banco de Dados e Inteligencia Artificial, construida no Tecnico em Informatica com nota 10 e no Bacharelado em Ciencia e Tecnologia pela UNIFEI (conclusao 2026). Certificada em Gestao de Projetos pela Microsoft/LinkedIn (PMI) e Supply Chain pela LinkedIn Learning. Disponivel para posicoes hibridas e remotas.
+      </p>
+    </div>
+
+    <div class="section">
+      <div class="sec-title">Experiencia Profissional</div>
+
+      <div class="job">
+        <div class="job-header">
+          <div class="job-title">Analista de PCM e Suprimentos</div>
+          <div class="job-period">Set. 2025 – Atual</div>
+        </div>
+        <div class="job-co">Pratica Produtos S.A.</div>
+        <ul class="bl">
+          <li>Planejamento e controle de materiais com integracao entre Producao, Almoxarifado e Compras</li>
+          <li>Estruturacao de controles e indicadores para suporte a decisao operacional e estrategica</li>
+          <li class="bold">Elaboracao proativa de proposta de otimizacao de fluxo integrado (PCM, Compras, PCP, Engenharia e Logistica) — mapeamento de causas raiz, saneamento de kanban, acuracia de BOM e governanca de processos</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="job-header">
+          <div class="job-title">Representante Discente de Curso</div>
+          <div class="job-period">Abr. 2024 – Jun. 2026</div>
+        </div>
+        <div class="job-co">UNIFEI – Universidade Federal de Itajuba</div>
+        <ul class="bl">
+          <li>2 anos de representacao em reunioes colegiadas com participacao em decisoes curriculares e academicas</li>
+          <li>Negociacao institucional e gestao de conflitos entre discentes e coordenacao</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="job-header">
+          <div class="job-title">Analista de Compras Junior</div>
+          <div class="job-period">Jan. 2025 – Set. 2025</div>
+        </div>
+        <div class="job-co">Tamura Brasil</div>
+        <ul class="bl">
+          <li class="bold">
+            <span class="badge">-55%</span><span class="badge">-40%</span><span class="badge">-25% a -30%</span>
+            Reducoes em categorias estrategicas: gas industrial, silicone, EPIs e materiais de limpeza (-12% a -22%)
+          </li>
+          <li class="bold"><span class="badge">ate -40%</span> Negociacoes de CAPEX com reducoes sobre propostas iniciais dos fornecedores</li>
+          <li class="bold">Estudo comparativo frota terceirizada x motoristas proprios — adotado integralmente pela empresa com reducao imediata de gastos recorrentes</li>
+          <li>Metodologia de programacao mensal para itens criticos, eliminando rupturas e garantindo continuidade do fluxo fabril</li>
+          <li>Reestruturacao do processo de EPIs, protocolo de rastreabilidade para compras emergenciais e padronizacao de PV com SLAs definidos</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="job-header">
+          <div class="job-title">Analista de Compras</div>
+          <div class="job-period">Fev. 2024 – Ago. 2024</div>
+        </div>
+        <div class="job-co">Litucera Limpeza e Engenharia Ltda.</div>
+        <ul class="bl">
+          <li class="bold"><span class="badge">ate -55%</span> Reducao nos custos de insumos padronizados via renegociacao estruturada e diversificacao de fornecedores</li>
+          <li>Gestao de compras, contratos, fechamentos mensais e coordenacao de Almoxarifado e Manutencao</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="job-header">
+          <div class="job-title">Analista de Compras – Setor Hospitalar</div>
+          <div class="job-period">Ago. 2021 – Fev. 2024</div>
+        </div>
+        <div class="job-co">FUVS – Fundacao de Ensino Superior do Vale do Sapucai</div>
+        <ul class="bl">
+          <li class="bold">Gestao multi-unidade: Hospital Samuel Libanio, Univas, Col. Anglo, Col. Joao Paulo e FUVS — cinco instituicoes simultaneas</li>
+          <li class="bold"><span class="badge">min. -10%</span> Reducoes garantidas por ciclo de negociacao em materiais e insumos hospitalares</li>
+          <li>Operacao de Tasy e Bionexo para gestao de pedidos, controle de estoque e processos hospitalares</li>
+          <li>Negociacao, homologacao e avaliacao de fornecedores para multiplas unidades</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="job-header">
+          <div class="job-title">Consultora de Vendas e Gestao de CRM</div>
+          <div class="job-period">Abr. 2019 – Mar. 2021</div>
+        </div>
+        <div class="job-co">Grupo Via Mondo Automoveis</div>
+        <ul class="bl">
+          <li>Gestao de CRM, qualificacao de leads, atendimento consultivo e fidelizacao de carteira</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</div>
+</body>
+</html>
